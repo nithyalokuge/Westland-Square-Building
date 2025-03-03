@@ -13,18 +13,219 @@
 
 </head>
 
+
 <body>
 
-    <h1>header</h1>
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">IDM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container my-4">
+        <!-- Board section -->
+        <div class="row">
+            <div class="col-12">
+                <h2>Board</h2>
+            </div>
+        </div>
+
+        <!-- Chat and Pinned Messages -->
+        <div class="row bg-white p-3 rounded shadow" style="min-height: 80vh;">
+            <!-- Chat Section -->
+            <div class="col-12 col-md-7 p-2">   <!-- Takes the whole space for a mobile, and 60% for wider screens -->
+                <h4>Chat</h4>
+                <div class="chat-box p-3">
+                    <div class="p-2 mb-2 bg-light rounded">
+                        <strong>Emilio P.</strong>
+                        <p>Tomorrow’s lecture is cancelled!</p>
+                    </div>
+                    <div class="p-2 mb-2 bg-light rounded">
+                        <strong>Yang L.</strong>
+                        <p>Has anyone seen a green notebook?</p>
+                        <a href="#" class="small">See all replies</a>
+                    </div>
+                    <div class="p-2 mb-2 bg-light rounded">
+                        <strong>Finn H.</strong>
+                        <p>I think it’s in the gaming room!</p>
+                    </div>
+                    <div class="p-2 mb-2 bg-secondary rounded">
+                        <strong>You</strong>
+                        <p>Cake in the kitchen!</p>
+                    </div>
+                </div>
+    
+                <!-- Input Box -->
+                <div class="d-flex mt-3 p-3">
+                    <input type="text" class="form-control me-2" placeholder="Type your message...">
+                    <button class="btn btn-dark">
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+    
+            <!-- Pinned Messages Section -->
+            <div class="col-12 col-md-4 p-2">
+                <h4 class="text-center">Pinned</h4>
+                <div class="p-3 mb-2 bg-light rounded text-muted">Pinned Message 1</div>
+                <div class="p-3 mb-2 bg-light rounded text-muted">Pinned Message 2</div>
+            </div>
+        </div>
+    </div>
 
 
+    <div class="container my-4">
+        <!-- Lost and Found section -->
+        <div class="row">
+            <div class="col-12 p-3">
+                <h2>Lost and Found</h2>
+            </div>
+        </div>
+    
+        <!-- Lost Items Grid -->
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="lost-card">
+                    <h5>Martin N.</h5>
+                    <div class="item-lost rounded bg-secondary p-5">
+                        <img src="https://via.placeholder.com/50" alt="Item">
+                    </div>
+                    <div class="details-box">
+                        <strong>Item:</strong> Scarf <br>
+                        <strong>Lost on:</strong> Thursday 6th <br>
+                        <strong>Description:</strong> ...
+                    </div>
+                    <div class="respond-box d-flex">
+                        <input type="text" class="form-control" placeholder="Respond...">
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-3">
+                <div class="lost-card">
+                    <h5>Alana P.</h5>
+                    <div class="item-lost rounded bg-secondary p-5">
+                        <img src="https://via.placeholder.com/50" alt="Item">
+                    </div>
+                    <div class="details-box">
+                        <strong>Item:</strong> Scarf <br>
+                        <strong>Lost on:</strong> Thursday 6th <br>
+                        <strong>Description:</strong> ...
+                    </div>
+                    <div class="respond-box d-flex">
+                        <input type="text" class="form-control" placeholder="Respond...">
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-3">
+                <div class="lost-card">
+                    <h5>Mannat V.</h5>
+                    <div class="item-lost rounded bg-secondary p-5">
+                        <img src="https://via.placeholder.com/50" alt="Item">
+                    </div>
+                    <div class="details-box">
+                        <strong>Item:</strong> Scarf <br>
+                        <strong>Lost on:</strong> Thursday 6th <br>
+                        <strong>Description:</strong> ...
+                    </div>
+                    <div class="respond-box d-flex">
+                        <input type="text" class="form-control" placeholder="Respond...">
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-3">
+                <div class="lost-card">
+                    <h5>You</h5>
+                    <div class="delete-icon">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="item-lost rounded bg-secondary p-5">
+                        <img src="https://via.placeholder.com/50" alt="Item">
+                    </div>
+                    <div class="details-box">
+                        <strong>Item:</strong> Scarf <br>
+                        <strong>Lost on:</strong> Thursday 6th <br>
+                        <strong>Description:</strong> ...
+                    </div>
+                    <div class="respond-box d-flex">
+                        <input type="text" class="form-control" placeholder="Respond...">
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- See More Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-outline-secondary">
+                <i class="fas fa-angle-down"></i> See more
+            </button>
+        </div>
 
+        <!-- Add an Object Button -->
+        <div class="d-flex justify-content-start align-items-center mt-5">
+            <button class="add-object-btn">
+                Add an object
+                <i class="fas fa-plus ms-2"></i>
+            </button>
+            <hr class="flex-grow-1 ms-3">
+        </div>
+    </div>
 
-    <!-- Bootstrap JS avec Popper (nécessaire pour dropdowns, modals, tooltips...) -->
+    <div class="container my-5">
+        <!-- Title section -->
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2>Reviews</h2>
+            </div>
+        </div>
+    
+        <div class="review mb-4">
+            <p><strong>Mr X, currently working at Microsoft (e.g.)</strong></p>
+            <div class="review-card">
+                <p>*the review*</p>
+            </div>
+        </div>
+    
+        <div class="review mb-4">
+            <p><strong>Blabla</strong></p>
+            <div class="review-card">
+                <p>*the review*</p>
+            </div>
+        </div>
+    
+        <div class="review mb-4">
+            <p><strong>Blabla, previous/current student</strong></p>
+            <div class="review-card">
+                <p>*the review*</p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>    
+
+            
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
