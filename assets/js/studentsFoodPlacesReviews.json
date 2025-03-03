@@ -1,0 +1,38 @@
+[
+    {
+        "place": "Tesco",
+        "rating": "★★★★★",
+        "review": "This supermarket is a life-saver! I get my lunch there if I need to. From every day—sandwiches to fresh berries, and bread... you name it. It’s so convenient because it’s right next to our building. Couldn’t ask for a better spot for quick, and tasty meals.",
+        "student": "Kiera O'Hara-Heinz",
+        "studentStatus": "current IDM student"
+    },
+    {
+        "place": "Subway",
+        "rating": "★★★☆☆",
+        "review": "The prices have definitely gone up lately, but I still go to Subway twice a month just for their subs. The one with chicken, American cheese, salad, and salsa is absolutely fantastic.",
+        "student": "Giselle Cruz Martínez",
+        "studentStatus": "current IDM student"
+    },
+    {
+        "place": "Honey Truffle",
+        "rating": "★★★★☆",
+        "review": "This is the place I go every day for my breakfast. The coffee is always perfect, and the croissant? Absolutely to die for! I honestly can't imagine starting my day without it. Coffee and croissant for life, I guess. I don’t know how I’d survive without this spot in my routine. Highly recommend!",
+        "student": "Eve Brady",
+        "studentStatus": "current IDM student"
+    },
+    {
+        "place": "Bitebox",
+        "rating": "★★★★★",
+        "review": "The burgers they make here are top-tier! Juicy, flavourful, and cooked just right. Every bite is a taste of perfection.",
+        "student": "Giselle Cruz Martínez",
+        "studentStatus": "current IDM student"
+    },
+    {
+        "place": "The Pig and Heifer",
+        "rating": "★★★★☆",
+        "review": "Yummy sandwiches with a huge selection of fillings. The ques can be quite long at lunch time, but they move quickly.",
+        "student": "Martin Nangole",
+        "studentStatus": "current IDM student"
+    }
+]
+
