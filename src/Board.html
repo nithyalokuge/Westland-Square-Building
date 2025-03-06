@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference Page</title>
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+
+<body>
+
+        <!-- Navigation bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container text-center">
+                    <a class="navbar-brand" href="homepage.html">
+                        <img class="rounded-circle" alt="avatar" src="https://picsum.photos/id/237/55">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-header" 
+                            aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbar-header">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/homepage.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/Facilities.html">Facilities</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/whatsAround.html">What's around</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="/~fhorgan/group6idmbuilding2025/src/board.html">Student Board</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/contact.html">Contact</a></li>                        
+                        </ul>
+                    </div>
+                </div>
+            </nav>    
+        </header>
+
+    
+    <div class="container my-4">
+        <!-- Board section -->
+        <div class="row">
+            <div class="col-12">
+                <h2>Board</h2>
+            </div>
+        </div>
+
+        <!-- Chat and Pinned Messages -->
+        <div class="row bg-white p-3 rounded shadow" style="min-height: 80vh;">
+            <!-- Chat Section -->
+            <div class="col-12 col-md-7 p-2">   <!-- Takes the whole space for a mobile, and 60% for wider screens -->
+                <h4>Chat</h4>
+                <div class="chat-box p-3">
+                    <div class="p-2 mb-2 bg-light rounded">
+                        <strong>Emilio P.</strong>
+                        <p>Tomorrow’s lecture is cancelled!</p>
+                    </div>
+                    <div class="p-2 mb-2 bg-light rounded">
+                        <strong>Yang L.</strong>
+                        <p>Has anyone seen a green notebook?</p>
+                        <a href="#" class="small">See all replies</a>
+                    </div>
+                    <div class="p-2 mb-2 bg-light rounded">
+                        <strong>Finn H.</strong>
+                        <p>I think it’s in the gaming room!</p>
+                    </div>
+                    <div class="p-2 mb-2 bg-secondary rounded">
+                        <strong>You</strong>
+                        <p>Cake in the kitchen!</p>
+                    </div>
+                </div>
+    
+                <!-- Input Box -->
+                <div class="d-flex mt-3 p-3">
+                    <input type="text" class="form-control me-2" placeholder="Type your message...">
+                    <button class="btn btn-dark">
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+    
+            <!-- Pinned Messages Section -->
+            <div class="col-12 col-md-4 p-2">
+                <h4 class="text-center">Pinned</h4>
+                <div class="p-3 mb-2 bg-light rounded text-muted">Pinned Message 1</div>
+                <div class="p-3 mb-2 bg-light rounded text-muted">Pinned Message 2</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-4">
+        <!-- Lost and Found section -->
+        <div class="row">
+            <div class="col-12 p-3">
+                <h2>Lost and Found</h2>
+            </div>
+        </div>
+    
+        <!-- Lost Items Grid -->
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="lost-card">
+                    <h5>Martin N.</h5>
+                    <div class="item-lost rounded bg-secondary p-5">
+                        <img src="https://via.placeholder.com/50" alt="Item">
+                    </div>
+                    <div class="details-box">
+                        <strong>Item:</strong> Scarf <br>
+                        <strong>Lost on:</strong> Thursday 6th <br>
+                        <strong>Description:</strong> ...
+                    </div>
+                    <div class="respond-box d-flex">
+                        <input type="text" class="form-control" placeholder="Respond...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="lost-card">
+                    <h5>Alana P.</h5>
+                    <div class="item-lost rounded bg-secondary p-5">
+                        <img src="https://via.placeholder.com/50" alt="Item">
+                    </div>
+                    <div class="details-box">
+                        <strong>Item:</strong> Scarf <br>
+                        <strong>Lost on:</strong> Thursday 6th <br>
+                        <strong>Description:</strong> ...
+                    </div>
+                    <div class="respond-box d-flex">
+                        <input type="text" class="form-control" placeholder="Respond...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="lost-card">
+                    <h5>Mannat V.</h5>
+                    <div class="item-lost rounded bg-secondary p-5">
+                        <img src="https://via.placeholder.com/50" alt="Item">
+                    </div>
+                    <div class="details-box">
+                        <strong>Item:</strong> Scarf <br>
+                        <strong>Lost on:</strong> Thursday 6th <br>
+                        <strong>Description:</strong> ...
+                    </div>
+                    <div class="respond-box d-flex">
+                        <input type="text" class="form-control" placeholder="Respond...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="lost-card">
+                    <h5>You</h5>
+                    <div class="delete-icon">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="item-lost rounded bg-secondary p-5">
+                        <img src="https://via.placeholder.com/50" alt="Item">
+                    </div>
+                    <div class="details-box">
+                        <strong>Item:</strong> Scarf <br>
+                        <strong>Lost on:</strong> Thursday 6th <br>
+                        <strong>Description:</strong> ...
+                    </div>
+                    <div class="respond-box d-flex">
+                        <input type="text" class="form-control" placeholder="Respond...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- See More Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-outline-secondary">
+                <i class="fas fa-angle-down"></i> See more
+            </button>
+        </div>
+
+        <!-- Add an Object Button -->
+        <div class="d-flex justify-content-start align-items-center mt-5">
+            <button class="add-object-btn">
+                <strong>Add an object</strong>
+            </button>
+        </div>
+
+
+        <div class="form-container mt-4 bg-light">
+            <h5 class="fw-bold">New object lost</h5>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Item:</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Lost on:</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description: <span class="text-muted">(optional)</span></label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3 add-picture">
+                    <i class="bi bi-plus"></i>
+                    <span>Add a picture</span>
+                </div>
+
+                <button type="submit" class="btn btn-post">Post</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="container my-5">
+        <!-- Title section -->
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2>Reviews</h2>
+            </div>
+        </div>
+    
+        <div class="p-4 rounded">
+            <div class="review mb-4">
+                <p><strong>Mr X (student of MSc 2019), currently working at Microsoft (e.g.)</strong></p>
+                <div class="review-card">
+                    <p>*the review*</p>
+                </div>
+            </div>
+        
+            <div class="review mb-4">
+                <p><strong>Blabla</strong></p>
+                <div class="review-card">
+                    <p>*the review*</p>
+                </div>
+            </div>
+        
+            <div class="review mb-4">
+                <p><strong>Blabla, previous/current student</strong></p>
+                <div class="review-card">
+                    <p>*the review*</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+
+<!--
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2>New object lost</h2>
+            </div>
+        </div>
+
+        <div class="row m-3 bg-light">            
+            <div class="row p-3">
+                <div class="col-4">
+                    <h4>Item: </h4>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 p-3">
+                    <h4>Lost on: </h4>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="...">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 p-3">
+                    <h4>Description: </h4>
+                    <h4>(optional)</h4>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="...">
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+                <i>Add a picture...</i>
+
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-1 rounded text-center bg-secondary">
+                <strong>POST</strong>
+
+            </div>        </div>
+
+
+          
+    </div>
+    -->
+
+    
+    
+    <!-- Footer 
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>    -->
+<!-- Footer section -->
+<footer class="footer py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="mt-2 col-md-3 p-3">
+                <img src="../assets/img/trinityLogo.png" alt="Trinity College Dublin logo" class="footer-logo" width="200">
+            </div>
+            <div class="col-md-3 p-3">
+                <p class="mt-2 mb-2">8, Westland Square, Pearse St</p>
+                <p class="mb-2">Trinity College Dublin</p>
+                <p class="mb-4">Dublin, Ireland</a></p>
+            </div>
+            <div class="col-md-3 p-3">
+                <p class="mt-2 mb-2 fw-bold"><a href="/~fhorgan/group6idmbuilding2025/src/homepage.html" class="footer-link" aria-label="Go to Home page">Home</a></p>
+                <p class="mb-2"><a href="/~fhorgan/group6idmbuilding2025/src/Facilities.html" class="footer-link" aria-label="Go to Facilities page">Facilities</a></p>
+                <p class="mb-2"><a href="/~fhorgan/group6idmbuilding2025/src/board.html" class="footer-link" aria-label="Go to Student Board page">Student Board</a></p>
+                <p class="mb-2"><a href="/~fhorgan/group6idmbuilding2025/src/whatsAround.html" class="footer-link" aria-label="See what's around">What's around</a></p>
+                <p class="mb-2"><a href="/~fhorgan/group6idmbuilding2025/src/contact.html" class="footer-link" aria-label="Go to Contact page">Contact</a></p>
+            </div>
+            <div class=col-md-3>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/trinitycollegedublin" class="btn btn-link" title="Facebook" aria-label="Go to Trinity College's Facebook page" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/tcddublin" class="btn btn-link" title="Twitter (X)" aria-label="Go to Trinity College's Twitter (X) page" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/trinitycollegedublin/" class="btn btn-link" title="Instagram" aria-label="Go to Trinity College's Instagram page" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://ie.linkedin.com/school/trinity-college-dublin/" class="btn btn-link" title="Linkedin" aria-label="Go to Trinity College's Linkedin page" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/trinitycollegedublin" class="btn btn-link" title="YouTube" aria-label="Go to Trinity College's YouTube page" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 row text-center d-flex justify-content-center">
+            <small>&copy; 2025 All rights reserved.</small>
+        </div>
+    </div>
+</footer>
+
+            
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
