@@ -1,6 +1,6 @@
 // Script for fetching data from foodPlaces.json, display it and make the Prev and Next navigation links work
 
-fetch('assets/js/foodPlaces.json')
+fetch('../assets/js/foodPlaces.json')
     .then(response => response.json())
     .then(data => {
         let foodPlaces = data;

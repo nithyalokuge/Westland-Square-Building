@@ -1,0 +1,318 @@
+/* ========================= */
+/* Global Styles */
+/* ========================= */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: black;
+}
+
+/* ========================= */
+/* Navigation Bar */
+/* ========================= */
+.navbar {
+    background-color: #eeeeef;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #0569b9;
+}
+
+.navbar-nav {
+    padding: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+#offcanvasNavbar {
+    background-color: #0569b9;
+    color: white;
+}
+
+#offcanvasNavbar h5 {
+    color: black;
+}
+
+/* ========================= */
+/* Sections Styling */
+/* ========================= */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* ========================= */
+/* Grid Layout for Facilities Page */
+/* ========================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ========================= */
+/* Card Design */
+/* ========================= */
+.card {
+    height: 100%;
+    background: #0569b9;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* ========================= */
+/* Facilities - Floor Plan Image */
+/* ========================= */
+.Third-Floor-Plan img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* ========================= */
+/* Technologies Provided */
+/* ========================= */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech-icons span {
+    background: #0569b9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+/* ========================= */
+/* Contact Page Styling */
+/* ========================= */
+.people {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.person {
+    background: #0569b9;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+footer {
+    background-color: #eeeeef !important;
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-link {
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #0569b9;
+}
+
+/* ========================= */
+/* Social Media Icons */
+/* ========================= */
+.social-media a i {
+    color: #0569b9 !important;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover i {
+    color: #034e87 !important;
+}
+
+/* ========================= */
+/* Food Places Section */
+/* ========================= */
+#food-places {
+    background-color: #F4F3F3;
+}
+
+#food-places .btn {
+    background-color: #00B4AA;
+}
+
+.filter-btn {
+    border-radius: 55px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-btn:disabled {
+    background-color: #9fbab5;
+    color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+/* ========================= */
+/* Students' Reviews Section */
+/* ========================= */
+#students-reviews {
+    background-color: #F4F3F3;
+}
+
+.reviews-title {
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 20px;
+    background: #F4F3F3;
+}
+
+.place-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: gold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.student-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.student-status {
+    font-size: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: black;
+}
+
+/* ========================= */
+/* Transportation Section */
+/* ========================= */
+#transportation h3 {
+    margin-bottom: 20px;
+}
+
+embed {
+    width: 80%;
+    max-width: 100%;
+    height: 500px;
+    border: none;
+}
+
+@media (max-width: 520px) {
+    embed {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+/* ========================= */
+/* Responsive Adjustments */
+/* ========================= */
+@media (max-width: 1024px) {
+    .footer img {
+        margin-top: 4px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row {
+        text-align: center;
+    }
+
+    .tech-icons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 762px) {
+    .footer .col-md-3 img {
+        margin-bottom: 20px;
+    }
+
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .social-media {
+        margin-top: 12px;
+    }
+}
+
