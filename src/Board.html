@@ -8,40 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reference Page</title>
     <link rel="stylesheet" href="../assets/style/main.css">
+    <link rel="stylesheet" href="../assets/style/chatbox.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 
 
 <body>
 
-        <!-- Navigation bar -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container text-center">
-                    <a class="navbar-brand" href="homepage.html">
-                        <img class="rounded-circle" alt="avatar" src="https://picsum.photos/id/237/55">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-header" 
-                            aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbar-header">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/homepage.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/Facilities.html">Facilities</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/whatsAround.html">What's around</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="/~fhorgan/group6idmbuilding2025/src/board.html">Student Board</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/contact.html">Contact</a></li>                        
-                        </ul>
-                    </div>
+    <!-- Navigation bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container text-center">
+                <a class="navbar-brand" href="homepage.html">
+                    <img class="rounded-circle" alt="avatar" src="https://picsum.photos/id/237/55">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-header" 
+                        aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbar-header">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/homepage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/Facilities.html">Facilities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/whatsAround.html">What's around</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/~fhorgan/group6idmbuilding2025/src/board.html">Student Board</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/~fhorgan/group6idmbuilding2025/src/contact.html">Contact</a></li>                        
+                    </ul>
                 </div>
-            </nav>    
-        </header>
+            </div>
+        </nav>    
+    </header>
 
-    
     <div class="container my-4">
         <!-- Board section -->
         <div class="row">
@@ -53,38 +52,23 @@
         <!-- Chat and Pinned Messages -->
         <div class="row bg-white p-3 rounded shadow" style="min-height: 80vh;">
             <!-- Chat Section -->
-            <div class="col-12 col-md-7 p-2">   <!-- Takes the whole space for a mobile, and 60% for wider screens -->
-                <h4>Chat</h4>
-                <div class="chat-box p-3">
-                    <div class="p-2 mb-2 bg-light rounded">
-                        <strong>Emilio P.</strong>
-                        <p>Tomorrow’s lecture is cancelled!</p>
-                    </div>
-                    <div class="p-2 mb-2 bg-light rounded">
-                        <strong>Yang L.</strong>
-                        <p>Has anyone seen a green notebook?</p>
-                        <a href="#" class="small">See all replies</a>
-                    </div>
-                    <div class="p-2 mb-2 bg-light rounded">
-                        <strong>Finn H.</strong>
-                        <p>I think it’s in the gaming room!</p>
-                    </div>
-                    <div class="p-2 mb-2 bg-secondary rounded">
-                        <strong>You</strong>
-                        <p>Cake in the kitchen!</p>
-                    </div>
+            <div class="col-12 col-md-7 p-2">
+                <h4 class="text-center">Chat</h4>
+                <div id="chatBox" class="p-3 border rounded" style="height: 60vh; overflow-y: auto; background-color: #f8f9fa;">
+                    <!-- Messages will be added dynamically -->
                 </div>
-    
+
                 <!-- Input Box -->
-                <div class="d-flex mt-3 p-3">
-                    <input type="text" class="form-control me-2" placeholder="Type your message...">
-                    <button class="btn btn-dark">
-                    </button>
+                <div class="mt-3">
+                    <div class="input-group">
+                        <input type="text" id="messageInput" class="form-control" placeholder="Type a message...">
+                        <button class="btn btn-primary" id="sendMessage">Send</button>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-1"></div>
-    
+
             <!-- Pinned Messages Section -->
             <div class="col-12 col-md-4 p-2">
                 <h4 class="text-center">Pinned</h4>
@@ -94,6 +78,7 @@
         </div>
     </div>
 
+    
 
     <div class="container my-4">
         <!-- Lost and Found section -->
@@ -317,10 +302,6 @@
 
     
     
-    <!-- Footer 
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>    -->
 <!-- Footer section -->
 <footer class="footer py-5 bg-light">
     <div class="container">
@@ -369,6 +350,9 @@
             
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/chatbox.js"></script>
+
 
 </body>
 
