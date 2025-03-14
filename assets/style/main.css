@@ -50,7 +50,6 @@ body {
 /* ========================= */
 section {
     padding: 60px 20px;
-    text-align: center;
 }
 
 h2 {
@@ -141,6 +140,12 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.person img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 /* ========================= */
