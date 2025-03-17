@@ -26,10 +26,12 @@ This group project is part of the **"Authoring for Digital Media" module (CS7026
   - [Bootstrap](https://getbootstrap.com/) for responsive design;
 
 ---
+
 ## Wireframes  
 
 Wireframes are available at this link:  
 [Westland Square Wireframes](https://www.figma.com/design/arP5b4TbsrOtAjC1uOdDlG/Westland-Square?node-id=17-2&p=f&t=JARQc07MKvFoLLeo-0)  
+
 ---
 
 ## Roles  
