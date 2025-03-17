@@ -22,8 +22,8 @@ This group project is part of the **"Authoring for Digital Media" module (CS7026
 
 ## Technologies
 - **Frontend**:  
-  - HTML5, CSS3, JavaScript;
-  - [Bootstrap](https://getbootstrap.com/) for responsive design;
+  - HTML5, CSS3, JavaScript
+  - [Bootstrap](https://getbootstrap.com/) for responsive design
 
 ---
 
