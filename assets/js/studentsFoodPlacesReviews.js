@@ -1,4 +1,4 @@
-// Script for getting data from studentsFoodPlacesReviews.json and display it
+// Script for getting data from studentsFoodPlacesReviews.json and displaying it
 
 document.addEventListener("DOMContentLoaded", async function () {
     const response = await fetch("../assets/js/studentsFoodPlacesReviews.json");
