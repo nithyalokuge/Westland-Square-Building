@@ -1,17 +1,19 @@
+<!-- Facilities page -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facilities Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../assets/style/main.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facilities</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="../assets/style/main.css">
+    </head>
+    <body>
         <!-- Navigation bar -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg bg-light py-4">
                 <div class="container text-center">
                     <a class="navbar-brand" href="homepage.html">
                         <img class="rounded-circle" alt="Avatar, showing the building" src="../assets/img/avatar.png" width="60">
@@ -23,7 +25,7 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbar-header">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="Facilities.html">Facilities</a></li>
+                            <li class="nav-item"><a class="nav-link fw-bold" href="Facilities.html">Facilities</a></li>
                             <li class="nav-item"><a class="nav-link" href="whatsAround.html">What's around</a></li>
                             <li class="nav-item"><a class="nav-link" href="Board.html">Student Board</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -33,153 +35,202 @@
             </nav>    
         </header>
     
-    <section class="text-center" id="floor-plans">
-        <h2>Floor Plans</h2>
-        <div class="grid">
-            <div class="card"> <h3>Ground Floor</h3>
-                <ul>
-                    <li>Entrance</li>
-                    <li>John's Lodge</li>
-                    <li>Elevator</li>
-                    <li>Stairs</li>
-                    <li>Office</li>
-                </ul>
-            </div>
-            <div class="card"> <h3>First Floor</h3>
-                <ul>
-                    <li>Kitchen</li>
-                    <li>Ladies' Toilet</li>
-                    <li>PhD Students</li>
-                </ul>
-            </div>
-            <div class="card"> <h3>Second Floor</h3>
-                <ul>
-                    <li>Gents' Toilet</li>
-                    <li>2nd Floor Lab</li>
-                    <li>VR Room</li>
-                    <li>Cathal's Office</li>
-                </ul>
-            </div>
-            <div class="card"> <h3>Third Floor</h3>
-                <ul>
-                    <li>Toilet</li>
-                    <li>3rd Floor Lab</li>
-                    <li>IDM Classroom</li>
-                    <li>Game Room</li>
-                    <li>Appliance Room</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <section class="text-center" id="third-floor">
-        <h2>Third Floor Plan</h2>
-        <img src="third-floor.jpg" alt="Third Floor Image">
-    </section>
-    
-    <section class="text-center" id="idm-classroom">
-        <h2>IDM Classroom</h2>
-        <p>Available tech, electrical outlets, projection screen...</p>
-        <img src="third-floor.jpg" alt="Third Floor Image">
-    </section>
-
-
-    <section class="text-center" id="labs">
-        <h2>Labs</h2>
-        <p>Available tech: eletrical outlets, Windows; Macs computers...</p>
-        <p>Access to computers granted only for SCSS students and staff</p>
-    </section>
-    
-    <section class="text-center" id="technologies">
-        <h2>Technologies Provided</h2>
-        <div class="tech-icons">
-            <span>Microsoft Package</span>
-            <span>3dsMax</span>
-            <span>Reaper</span>
-            <span>Adobe Creative Cloud</span>
-        </div>
-    </section>
-    
-    <section class="text-center" id="other-rooms">
-        <h2>Other Rooms</h2>
-        <div class="grid">
-            <div class="card"> <h3>Game Room</h3> 
-                <img src="game-room.jpg" alt="Game Room Image">
-                <p>Brief description</p>
-            </div>
-            <div class="card"> <h3>VR Room</h3> 
-                <img src="vr-room.jpg" alt="VR Room Image">
-                <p>Brief description</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="text-center" id="restrooms">
-        <h2>Restrooms</h2>
-        <div class="grid">
-            <div class="card"> <h3>First Floor</h3>
-                <img src="firstT.jpg" alt="First Floor Toilet Image">
-                <p>Brief description</p>
-            </div>
-            <div class="card"> <h3>Second Floor</h3>
-                <img src="secondT.jpg" alt="Second Floor Toilet Image">
-                <p>Brief description</p>
-            </div>
-            <div class="card"> <h3>Third Floor</h3>
-                <img src="thirdT.jpg" alt="Third Floor Toilet Image">
-                <p>Brief description</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="text-center" id="kitchen">
-        <h2>Kitchen</h2>
-        <p>Facilities include microwaves, kettles, and fridge availability.</p>
-    </section>
-    
-<!-- Footer section -->
-<footer class="footer py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="mt-2 col-md-3 p-3">
-                <img src="../assets/img/trinityLogo.png" alt="Trinity College Dublin logo" class="footer-logo" width="200">
-            </div>
-            <div class="col-md-3 p-3">
-                <p class="mt-2 mb-2">8, Westland Square, Pearse St</p>
-                <p class="mb-2">Trinity College Dublin</p>
-                <p class="mb-4">Dublin, Ireland</a></p>
-            </div>
-            <div class="col-md-3 p-3">
-                <p class="mb-2"><a href="homepage.html" class="footer-link" aria-label="Go to Home page">Home</a></p>
-                <p class="mt-2 mb-2 fw-bold"><a href="Facilities.html" class="footer-link" aria-label="Go to Facilities page">Facilities</a></p>
-                <p class="mb-2"><a href="Board.html" class="footer-link" aria-label="Go to Student Board page">Student Board</a></p>
-                <p class="mb-2"><a href="whatsAround.html" class="footer-link" aria-label="See what's around">What's around</a></p>
-                <p class="mb-2"><a href="contact.html" class="footer-link" aria-label="Go to Contact page">Contact</a></p>
-            </div>
-            <div class=col-md-3>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/trinitycollegedublin" class="btn btn-link" title="Facebook" aria-label="Go to Trinity College's Facebook page" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://x.com/tcddublin" class="btn btn-link" title="Twitter (X)" aria-label="Go to Trinity College's Twitter (X) page" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/trinitycollegedublin/" class="btn btn-link" title="Instagram" aria-label="Go to Trinity College's Instagram page" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://ie.linkedin.com/school/trinity-college-dublin/" class="btn btn-link" title="Linkedin" aria-label="Go to Trinity College's Linkedin page" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.youtube.com/user/trinitycollegedublin" class="btn btn-link" title="YouTube" aria-label="Go to Trinity College's YouTube page" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+        <!-- Floor plans section -->
+        <section class="py-5" id="floor-plans">
+            <div class="container">
+                <h2>Floor Plans</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <h3 class="mb-3 fw-bold">Ground Floor</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-door-open" aria-label="Door open icon"></i> Entrance</li>
+                                <li class="mb-2"><i class="fas fa-laptop" aria-label="Laptop icon"></i> John's lodge</li>
+                                <li class="mb-2"><i class="fas fa-arrow-up" aria-label="Arrow up icon"></i><i class="fas fa-arrow-down" aria-label="Arrow down icon"></i> Elevator</li>
+                                <li class="mb-2"><i class="fas fa-arrow-up" aria-label="Arrow up icon"></i><i class="fas fa-arrow-down" aria-label="Arrow down icon"></i> Stairs</li>
+                                <li class="mb-2"><i class="fas fa-laptop" aria-label="Laptop icon"></i> Offices</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <h3 class="mb-3 fw-bold">First Floor</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-utensils" aria-label="Utensils icon"></i> Kitchen</li>
+                                <li class="mb-2"><i class="fas fa-female" aria-label="Female icon"></i> Ladies' restroom</li>
+                                <li class="mb-2"><i class="fas fa-book" aria-label="Book icon"></i> PhD students</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <h3 class="mb-3 fw-bold">Second Floor</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-male" aria-label="Male icon"></i> Gents' restroom</li>
+                                <li class="mb-2"><i class="fas fa-laptop-code" aria-label="Laptop icon"></i> 2nd floor Lab</li>
+                                <li class="mb-2"><i class="fas fa-glasses " aria-label="Glasses icon"></i> VR room</li>
+                                <li class="mb-2"><i class="fas fa-laptop" aria-label="Laptop icon"></i> Cathal's office</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <h3 class="mb-3 fw-bold">Third Floor</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-restroom" aria-label="Restroom icon"></i> Gender neutral restroom</li>
+                                <li class="mb-2"><i class="fas fa-laptop-code" aria-label="Laptop icon"></i> 3rd floor Lab</li>
+                                <li class="mb-2"><i class="fas fa-chalkboard-teacher" aria-label="Teacher icon"></i> IDM classroom</li>
+                                <li class="mb-2"><i class="fas fa-gamepad" aria-label="Gamepad icon"></i> Game room</li>
+                                <li class="mb-2"><i class="fas fa-cogs" aria-label="Cogs icon"></i> Appliance room</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="mt-4 row text-center d-flex justify-content-center">
-            <small>&copy; 2025 All rights reserved.</small>
-        </div>
-    </div>
-</footer>
-</body>
+        </section>
+    
+        <!-- Third Floor plan section -->
+        <section class="py-5" id="third-floor">
+            <div class="container">
+                <h2>Third Floor Plan</h2>
+                <img src="third-floor.jpg" alt="Third Floor Image">
+            </div>
+        </section>
+        
+        <!-- IDM Classroom section -->
+        <section class="py-5" id="idm-classroom">
+            <div class="container">
+                <h2>IDM Classroom</h2>
+                <p>Available tech, electrical outlets, projection screen...</p>
+                <img src="third-floor.jpg" alt="Third Floor Image">
+            </div>
+        </section>
+
+        <!-- Labs section -->
+        <section class="py-5" id="labs">
+            <div class="container">
+                <h2>Labs</h2>
+                <p>Available tech: eletrical outlets, Windows; Macs computers...</p>
+                <p>Access to computers granted only for SCSS students and staff</p>
+            </div>
+        </section>
+    
+        <!-- Technlogies provided section -->
+        <section class="py-5" id="technologies">
+            <div class="container">
+                <h2>Technologies Provided</h2>
+                <div class="tech-icons">
+                    <span>Microsoft Package</span>
+                    <span>3dsMax</span>
+                    <span>Reaper</span>
+                    <span>Adobe Creative Cloud</span>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Other rooms section -->
+        <section class="py-5" id="other-rooms">
+            <div class="container">
+                <h2>Other Rooms</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card"> 
+                            <h3>Game Room</h3> 
+                            <img src="game-room.jpg" alt="Game Room Image">
+                            <p>Brief description</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card"> 
+                            <h3>VR Room</h3> 
+                            <img src="vr-room.jpg" alt="VR Room Image">
+                            <p>Brief description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restrooms section -->
+        <section class="py-5" id="restrooms">
+            <div class="container">
+                <h2>Restrooms</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card"> <h3>First Floor</h3>
+                            <img src="firstT.jpg" alt="First Floor Toilet Image">
+                            <p>Brief description</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card"> <h3>Second Floor</h3>
+                            <img src="secondT.jpg" alt="Second Floor Toilet Image">
+                            <p>Brief description</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card"> <h3>Third Floor</h3>
+                            <img src="thirdT.jpg" alt="Third Floor Toilet Image">
+                            <p>Brief description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Kitchen section -->
+        <section class="py-5" id="kitchen">
+            <div class="container">
+                <h2>Kitchen</h2>
+                <p>Facilities include microwaves, kettles, and fridge availability.</p>
+            </div>
+        </section>
+    
+        <!-- Footer section -->
+        <footer class="footer py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../assets/img/trinityLogo.png" alt="Trinity College Dublin logo" class="footer-logo">
+                    </div>
+                    <div class="col-md-3">
+                        <p class="mb-2">8, Westland Square, Pearse St</p>
+                        <p class="mb-2">Trinity College Dublin</p>
+                        <p class="mb-4">Dublin, Ireland</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="mb-2"><a href="homepage.html" class="footer-link" aria-label="Go to Home page">Home</a></p>
+                        <p class="mb-2 fw-bold"><a href="Facilities.html" class="footer-link" aria-label="Go to Facilities page">Facilities</a></p>
+                        <p class="mb-2"><a href="whatsAround.html" class="footer-link" aria-label="See what's around">What's around</a></p>
+                        <p class="mb-2"><a href="Board.html" class="footer-link" aria-label="Go to Student Board page">Student Board</a></p>
+                        <p class="mb-2"><a href="contact.html" class="footer-link" aria-label="Go to Contact page">Contact</a></p>
+                    </div>
+                    <div class=col-md-3>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/trinitycollegedublin" class="btn btn-link" title="Facebook" aria-label="Go to Trinity College's Facebook page" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/tcddublin" class="btn btn-link" title="Twitter (X)" aria-label="Go to Trinity College's Twitter (X) page" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/trinitycollegedublin/" class="btn btn-link" title="Instagram" aria-label="Go to Trinity College's Instagram page" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://ie.linkedin.com/school/trinity-college-dublin/" class="btn btn-link" title="Linkedin" aria-label="Go to Trinity College's Linkedin page" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/trinitycollegedublin" class="btn btn-link" title="YouTube" aria-label="Go to Trinity College's YouTube page" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 row text-center d-flex justify-content-center">
+                    <small>&copy; 2025 All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
