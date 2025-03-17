@@ -18,7 +18,7 @@ fetch('../assets/js/foodPlaces.json')
                     <div class="card whatsAround">
                         <img src="${place.image}" class="card-img-top" alt="${place.name} +'s + picture">
                         <div class="card-body">
-                            <h5>${place.name}</h5>
+                            <h5 class="fw-bold">${place.name}</h5>
                             <p class="place-descr">${place.description}</p>
                             <p>${place.pricing}</p>
                             <a href="${place.website}" target="_blank">Visit website</a>
