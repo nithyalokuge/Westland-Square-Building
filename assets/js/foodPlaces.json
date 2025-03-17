@@ -27,7 +27,7 @@
         "name": "Bitebox",
         "category": "food",
         "website": "http://www.bitebox.ie/",
-        "description": "Burgers, Pizzas, and Salads available.",
+        "description": "Burgers and Pizzas available.",
         "pricing": "Pizza: €13.99, Expresso: €2.20",
         "image": "../assets/img/bitebox.jpg"
     },
@@ -36,7 +36,7 @@
         "category": "food",
         "website": "http://www.pigandheifer.ie/",
         "description": "Real 'pastrami on rye' available.",
-        "pricing": "Sandwich: €6.50, Vegetarian sandwich: €6.50",
+        "pricing": "Sandwich (vegetarian too): €6.50",
         "image": "../assets/img/pigAndHeifer.JPG"
     }
 ]
