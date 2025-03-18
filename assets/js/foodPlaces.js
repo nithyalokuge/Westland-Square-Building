@@ -21,7 +21,7 @@ fetch('../assets/js/foodPlaces.json')
                             <h5 class="fw-bold">${place.name}</h5>
                             <p class="place-descr">${place.description}</p>
                             <p>${place.pricing}</p>
-                            <a href="${place.website}" target="_blank">Visit website</a>
+                            <i class="fas fa-link" aria-label="Link icon"></i><a href="${place.website}" target="_blank">Visit website</a>
                         </div>
                     </div>
                 `;
