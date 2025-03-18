@@ -1,40 +1,41 @@
-/* Student Board page*/
-
+/* Student Board page */
 
 .lost-card {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     position: relative;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; /* Ensures uniform size */
+    max-width: 300px; /* Prevents stretching */
+    min-width: 250px; /* Keeps it from becoming too small */
 }
 
-.lost-card img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
+/* Prevents long text from stretching the card */
 .details-box {
     background: #f8f9fa;
     padding: 10px;
     margin-top: 5px;
     border-radius: 8px;
     font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
-.respond-box {
+
+/* Grid layout */
+#lostFoundSection {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 10px;
-    padding-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the grid */
+    gap: 20px;
 }
-.delete-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    border-radius: 50%;
+
+.p-3 {
+    width: 100%; /* Ensures it doesn't interfere with flex sizing */
 }
+
+
 .add-object-btn {
     background: #e0e0e0;
     border-radius: 20px;
