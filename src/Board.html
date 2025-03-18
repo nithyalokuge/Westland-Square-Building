@@ -6,9 +6,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reference Page</title>
+    <title>Student Board Page</title>
     <link rel="stylesheet" href="../assets/style/main.css">
     <link rel="stylesheet" href="../assets/style/chatbox.css">
+    <link rel="stylesheet" href="../assets/style/studentBoard.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -41,7 +42,7 @@
         </nav>    
     </header>
 
-    <div class="container my-4">
+    <div class="container-fluid my-4" style="padding-left: 5em; padding-right: 5em;">
         <!-- Board section -->
         <div class="row">
             <div class="col-12">
@@ -72,15 +73,17 @@
             <!-- Pinned Messages Section -->
             <div class="col-12 col-md-4 p-2">
                 <h4 class="text-center">Pinned</h4>
-                <div class="p-3 mb-2 bg-light rounded text-muted">Pinned Message 1</div>
-                <div class="p-3 mb-2 bg-light rounded text-muted">Pinned Message 2</div>
+                <div id="pinnedBox" class="p-3 bg-light rounded" style="min-height: 60vh; overflow-y: auto;">
+                    <!-- Pinned messages will be added here dynamically -->
+                </div>
             </div>
+  
         </div>
     </div>
 
     
 
-    <div class="container my-4">
+    <div class="container-fluid my-4 bg-light" style="padding-left: 5em; padding-right: 5em;">
         <!-- Lost and Found section -->
         <div class="row">
             <div class="col-12 p-3">
@@ -89,6 +92,7 @@
         </div>
     
         <!-- Lost Items Grid -->
+         <!--
         <div class="row g-4">
             <div class="col-md-3">
                 <div class="lost-card">
@@ -162,22 +166,38 @@
             </div>
         </div>
 
-        <!-- See More Button -->
         <div class="text-center mt-4">
             <button class="btn btn-outline-secondary">
                 <i class="fas fa-angle-down"></i> See more
             </button>
+        </div>-->
+
+        <div id="lostFoundSection" class="mt-4">
+            <!-- New lost objects will be added here dynamically -->
         </div>
+        
 
         <!-- Add an Object Button -->
         <div class="d-flex justify-content-start align-items-center mt-5">
-            <button class="add-object-btn">
-                <strong>Add an object</strong>
+            <button class="btn btn-primary add-object-btn">Add an Object</button>
             </button>
         </div>
 
-
-        <div class="form-container mt-4 bg-light">
+        <div class="form-container mt-4 bg-light p-3 rounded shadow" style="display: none;">
+            <h4>Add a Lost Object</h4>
+            <div class="mb-3">
+                <label for="objectName" class="form-label">Object Name</label>
+                <input type="text" id="objectName" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="objectDescription" class="form-label">Description</label>
+                <textarea id="objectDescription" class="form-control" rows="3"></textarea>
+            </div>
+            <button class="btn btn-success" id="postObject">Post</button>
+        </div>
+        
+<!--
+        <div class="form-container mt-4 bg-light" style="display: none;">
             <h5 class="fw-bold">New object lost</h5>
             <form>
                 <div class="mb-3">
@@ -202,11 +222,13 @@
 
                 <button type="submit" class="btn btn-post">Post</button>
             </form>
-        </div>
-
+        </div>-->
+        
     </div>
 
-    <div class="container my-5">
+
+
+    <div class="container-fluid my-5" style="padding-left: 5em; padding-right: 5em;">
         <!-- Title section -->
         <div class="row">
             <div class="col-12 mb-4">
@@ -238,69 +260,6 @@
         </div>        
     </div>
 
-
-
-<!--
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12 mb-4">
-                <h2>New object lost</h2>
-            </div>
-        </div>
-
-        <div class="row m-3 bg-light">            
-            <div class="row p-3">
-                <div class="col-4">
-                    <h4>Item: </h4>
-                </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="...">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4 p-3">
-                    <h4>Lost on: </h4>
-                </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="...">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4 p-3">
-                    <h4>Description: </h4>
-                    <h4>(optional)</h4>
-                </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="...">
-                </div>
-            </div>
-
-        </div>
-        
-        <div class="row">
-            <div class="col-md-10"></div>
-            <div class="col-md-2">
-                <i>Add a picture...</i>
-
-            </div>
-            
-        </div>
-
-        <div class="row">
-            <div class="col-md-10"></div>
-            <div class="col-md-1 rounded text-center bg-secondary">
-                <strong>POST</strong>
-
-            </div>        </div>
-
-
-          
-    </div>
-    -->
-
-    
     
 <!-- Footer section -->
 <footer class="footer py-5 bg-light">
@@ -352,6 +311,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="../assets/js/chatbox.js"></script>
+    <script src="../assets/js/lostAndFound.js"></script>
 
 
 </body>
