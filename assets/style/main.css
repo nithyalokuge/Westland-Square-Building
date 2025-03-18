@@ -13,6 +13,14 @@ h2 {
     font-weight: 600;
 }
 
+h3 {
+    font-weight: 600;
+}
+
+section {
+    padding: 60px 20px;
+}
+
 /* ========================= */
 /* Navigation Bar */
 /* ========================= */
@@ -129,13 +137,6 @@ footer {
 }
 
 /* ========================= */
-/* Sections Styling */
-/* ========================= */
-section {
-    padding: 60px 20px;
-}
-
-/* ========================= */
 /* Card Design */
 /* ========================= */
 .card {
@@ -168,34 +169,68 @@ section {
 /* ========================= */
 /* Facilities Page Styling */
 /* ========================= */
-#floor-plans, #idm-classroom, #technologies, #restrooms {
+#floor-plans, #idm-classroom, #other-rooms, #kitchen {
     background-color: #F4F3F3;
 }
 
-#floor-plans ul li i {
+#floor-plans ul li i, #idm-classroom ul li i, #labs-and-tech ul li i, #restrooms ul li i, #kitchen ul li i {
     margin-right: 10px;  
     font-size: 1.2rem;    
     color: white;       
 }
 
-.Third-Floor-Plan img {
-    width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
+#floor-plans ul.list-unstyled li {
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
 }
 
-.tech-icons {
+.third-floor-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
     justify-content: center;
-    gap: 20px;
+    align-items: center; 
 }
 
-.tech-icons span {
-    background: #0569b9;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 1rem;
+.img-fluid {
+    max-width: 500px; 
+    height: auto; 
+}
+
+.floor-text {
+    font-size: 1.2rem; 
+}
+
+.idm-classroom-container, .kitchen-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 60px; 
+}
+
+#labs-and-tech .carousel-item img {
+    max-width: 500px;
+    height: auto;
+}
+
+.classroom-image, .kitchen-image {
+    max-width: 400px;
+    height: auto; 
+}
+
+.tech-item img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#idm-classroom ul li i, #labs-and-tech ul li i, #kitchen ul li i {  
+    font-size: 10px;
+    color: black;       
+}
+
+#restrooms ul li i {  
+    font-size: 10px;     
 }
 
 /* ========================= */
@@ -236,11 +271,15 @@ section {
 .whatsAround .card-body h5 {
     font-size: 1.2rem ;
     margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
 }
 
 .whatsAround .card-body p {
     font-size: 0.9rem;
     margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
 }
 
 .whatsAround .card-body .place-descr {
@@ -250,6 +289,10 @@ section {
 .whatsAround .card-body a {
     font-size: 0.9rem;
     color: white;
+}
+
+.whatsAround i {
+    margin-right: 10px;       
 }
 
 .whatsAround .card-body a:hover {
@@ -383,6 +426,13 @@ section {
     .tech-icons {
         flex-direction: column;
     }
+    .idm-classroom-container, .kitchen-container {
+        gap: 20px; 
+        display: block;
+    }
+    .img-fluid {
+        width: 90%;
+    }
 }
 
 @media (width: 768px) {
@@ -396,11 +446,8 @@ section {
     .footer .social-media {
         margin-top: 2px;
     }
-}
-
-@media (max-width: 425px) {
-    #food-places .btn {
-        display: null;
+    .img-fluid {
+        width: 80%;
     }
 }
 
@@ -426,4 +473,8 @@ section {
         height: 90%;
         border: none;
     }
+    .idm-classroom-container h3 {
+        margin-top: 20px; 
+    }
 }
+
