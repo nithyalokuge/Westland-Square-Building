@@ -9,23 +9,9 @@
 }
 
 .textMessage {
-    background-color: lightpink;
+    background-color: lightgrey;
     max-width: 70%;
     margin-left: auto;
-
-}
-
-
-/* Pinned messages section */
-#pinnedBox {
-    min-height: 60vh;
-    overflow-y: auto;
-    background-color: lightgray;
-}
-
-.pinned-message {
-    background-color: lightblue; 
-    color: black;
 
 }
 
@@ -44,7 +30,22 @@
     border-radius: 20px;
     padding: 10px 20px;
     margin-left: 5px;
-    background-color: lightskyblue;
+    background-color: #F4F3F3;
 }
+
+/* Pinned messages section */
+#pinnedBox {
+    min-height: 60vh;
+    overflow-y: auto;
+    background-color: #F4F3F3;
+}
+
+.pinned-message {
+    background-color: lightblue; 
+    color: black;
+
+}
+
+
 
 
