@@ -1,50 +1,30 @@
-/* Student Board page */
-
-.lost-card {
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    background: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px; /* Ensures uniform size */
-    max-width: 300px; /* Prevents stretching */
-    min-width: 250px; /* Keeps it from becoming too small */
+#addObjectSection {
+    width: 100%;
 }
 
-/* Prevents long text from stretching the card */
-.details-box {
-    background: #f8f9fa;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 8px;
-    font-size: 14px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
 
-/* Grid layout */
 #lostFoundSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers the grid */
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns on large screens */
+    gap: 1rem; 
 }
 
-.p-3 {
-    width: 100%; /* Ensures it doesn't interfere with flex sizing */
+.object-card {
+    width: 100%; /* Ensure cards take full available width in grid columns */
+    word-break: break-word; /* Break long words onto the next line */
 }
 
 
-.add-object-btn {
-    background: #e0e0e0;
-    border-radius: 20px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    border: none;
+@media (max-width: 768px) {
+    #lostFoundSection {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
 }
+
+
+
+/* REVIEWS SECTION */
+
 
 .review-card {
     background-color: gray;
@@ -66,16 +46,4 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: not-allowed;
-}
-.add-picture {
-    font-style: italic;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-}
-.add-picture i {
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 3px;
 }

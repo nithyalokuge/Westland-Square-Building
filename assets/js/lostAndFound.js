@@ -106,11 +106,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to create a new lost object card
     function addLostObjectToSection(lostObject) {
         const objectCard = document.createElement("div");
-        objectCard.classList.add("p-3", "mb-3", "bg-white", "rounded", "shadow-sm");
+        objectCard.classList.add("object-card", "p-3", "mb-3", "bg-white", "rounded", "shadow-sm");
 
         // Create object card content (including image if provided)
         let objectCardContent = `
-            <h5 class="text-primary">${lostObject.name}</h5>
+            <h5 class="text-secondary">${lostObject.name}</h5>
             <p>${lostObject.description}</p>
         `;
 
