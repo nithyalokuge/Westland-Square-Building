@@ -25,10 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Create a chat message bubble with pin & delete buttons
-    function createMessageElement(text, isPinned = false) {
+    function createMessageElement(text, sender = "You", isPinned = false) {
         let messageDiv = document.createElement("div");
-        messageDiv.classList.add("d-flex", "justify-content-between", "align-items-center", "p-2", "mb-2", "bg-secondary", "text-white", "rounded");
-        messageDiv.innerHTML = `<div><strong>You</strong><p class="mb-0 message-text">${text}</p></div>`;
+        messageDiv.classList.add("textMessage", "d-flex", "justify-content-between", "align-items-center", "p-2", "mb-2", "rounded");
+
+        // Determine if the message is from the user or received from someone else
+        if (sender === "You") {
+            messageDiv.classList.add("sent-message");
+        } else {
+            messageDiv.classList.add("received-message");
+        }
+
+        messageDiv.innerHTML = `<div><strong>${sender}</strong><p class="mb-0 message-text">${text}</p></div>`;
 
         let buttonGroup = document.createElement("div");
 
@@ -62,8 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
         buttonGroup.appendChild(pinButton);
         buttonGroup.appendChild(deleteButton);
         messageDiv.appendChild(buttonGroup);
+
         return messageDiv;
     }
+
 
     // Function to create a pinned message bubble (with Unpin button)
     function pinMessage(text) {
@@ -71,14 +81,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if (Array.from(pinnedBox.children).some(msg => msg.getAttribute("data-text") === text)) return;
 
         let pinnedDiv = document.createElement("div");
-        pinnedDiv.classList.add("d-flex", "justify-content-between", "align-items-center", "p-2", "mb-2", "bg-primary", "text-white", "rounded");
+        pinnedDiv.classList.add("pinned-message", "d-flex", "justify-content-between", "align-items-center", "p-2", "mb-2", "rounded");
         pinnedDiv.setAttribute("data-text", text);
 
         let textDiv = document.createElement("div");
         textDiv.innerHTML = `<p class="mb-0">${text}</p>`;
 
         let unpinBtn = document.createElement("button");
-        unpinBtn.classList.add("btn", "btn-sm", "btn-light");
+        unpinBtn.classList.add("btn", "unpinBtn", "btn-sm", "btn-light");
         unpinBtn.textContent = "Unpin";
         unpinBtn.addEventListener("click", function () {
             unpinMessage(text);
