@@ -429,9 +429,6 @@ footer {
         height: 50px;
         margin-bottom: 50px;
     }
-    .footer .social-media {
-        margin-top: 2px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -451,6 +448,9 @@ footer {
     .img-fluid {
         width: 90%;
     }
+    .classroom-image, .kitchen-image, #labs-and-tech .carousel-inner {
+        margin-top: 20px;
+    }
 }
 
 @media (width: 768px) {
@@ -461,17 +461,20 @@ footer {
     .footer .row {
         text-align: left;
     }
+}
+
+@media (max-width: 760px) {
     .footer .social-media {
-        margin-top: 2px;
-    }
-    .img-fluid {
-        width: 80%;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 520px) {
     .filter-btn {
         margin: 5px 0; 
+    }
+    .footer .social-media {
+        margin-top: 20px;
     }
 }
 
