@@ -1,4 +1,5 @@
 // Script for fetching data from foodPlaces.json and displaying it
+// Script for fetching data from foodPlaces.json and displaying it
 
 fetch('../assets/js/foodPlaces.json')
     .then(response => response.json())
@@ -19,8 +20,10 @@ fetch('../assets/js/foodPlaces.json')
                         <img src="${place.image}" class="card-img-top" alt="${place.name} +'s + picture">
                         <div class="card-body">
                             <h5 class="fw-bold">${place.name}</h5>
+                            <h5 class="fw-bold">${place.name}</h5>
                             <p class="place-descr">${place.description}</p>
                             <p>${place.pricing}</p>
+                            <i class="fas fa-link" aria-label="Link icon"></i><a href="${place.website}" target="_blank">Visit website</a>
                             <i class="fas fa-link" aria-label="Link icon"></i><a href="${place.website}" target="_blank">Visit website</a>
                         </div>
                     </div>
@@ -36,6 +39,7 @@ fetch('../assets/js/foodPlaces.json')
             } else {
                 filteredFoodPlaces = foodPlaces.filter(place => place.category === category);
             }
+            displayFoodPlaces(filteredFoodPlaces);
             displayFoodPlaces(filteredFoodPlaces);
         }
 
@@ -57,5 +61,8 @@ fetch('../assets/js/foodPlaces.json')
 
         // Initially display all food places
         displayFoodPlaces(filteredFoodPlaces);
+        // Initially display all food places
+        displayFoodPlaces(filteredFoodPlaces);
     })
     .catch(error => console.error('Error fetching data: ', error));
+
