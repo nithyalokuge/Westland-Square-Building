@@ -1,5 +1,4 @@
 // Script for fetching data from foodPlaces.json and displaying it
-// Script for fetching data from foodPlaces.json and displaying it
 
 fetch('../assets/js/foodPlaces.json')
     .then(response => response.json())
@@ -40,7 +39,6 @@ fetch('../assets/js/foodPlaces.json')
                 filteredFoodPlaces = foodPlaces.filter(place => place.category === category);
             }
             displayFoodPlaces(filteredFoodPlaces);
-            displayFoodPlaces(filteredFoodPlaces);
         }
 
         // Event listener for filter buttons
@@ -61,8 +59,5 @@ fetch('../assets/js/foodPlaces.json')
 
         // Initially display all food places
         displayFoodPlaces(filteredFoodPlaces);
-        // Initially display all food places
-        displayFoodPlaces(filteredFoodPlaces);
     })
     .catch(error => console.error('Error fetching data: ', error));
-

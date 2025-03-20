@@ -5,10 +5,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Student's Board</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <title>Student Board Page</title>
         <link rel="stylesheet" href="../assets/style/main.css">
+        <link rel="stylesheet" href="../assets/style/chatbox.css">
+        <link rel="stylesheet" href="../assets/style/lostAndFound.css">
+        <link rel="stylesheet" href="../assets/style/reviews.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
     <body>
         <!-- Navigation bar -->
@@ -35,8 +39,7 @@
             </nav>
         </header>
 
-    
-    <div class="container my-4">
+    <div class="container-fluid my-4" style="padding-left: 5em; padding-right: 5em; padding-bottom: 3em;">
         <!-- Board section -->
         <div class="row">
             <div class="col-12">
@@ -47,49 +50,36 @@
         <!-- Chat and Pinned Messages -->
         <div class="row bg-white p-3 rounded shadow" style="min-height: 80vh;">
             <!-- Chat Section -->
-            <div class="col-12 col-md-7 p-2">   <!-- Takes the whole space for a mobile, and 60% for wider screens -->
-                <h4>Chat</h4>
-                <div class="chat-box p-3">
-                    <div class="p-2 mb-2 bg-light rounded">
-                        <strong>Emilio P.</strong>
-                        <p>Tomorrow’s lecture is cancelled!</p>
-                    </div>
-                    <div class="p-2 mb-2 bg-light rounded">
-                        <strong>Yang L.</strong>
-                        <p>Has anyone seen a green notebook?</p>
-                        <a href="#" class="small">See all replies</a>
-                    </div>
-                    <div class="p-2 mb-2 bg-light rounded">
-                        <strong>Finn H.</strong>
-                        <p>I think it’s in the gaming room!</p>
-                    </div>
-                    <div class="p-2 mb-2 bg-secondary rounded">
-                        <strong>You</strong>
-                        <p>Cake in the kitchen!</p>
-                    </div>
+            <div class="col-12 col-md-8 p-2">
+                <h4 class="text-center">Chat</h4>
+                <div id="chatBox" class="p-3">
+                    <!-- Messages will be added dynamically -->
                 </div>
-    
+
                 <!-- Input Box -->
-                <div class="d-flex mt-3 p-3">
-                    <input type="text" class="form-control me-2" placeholder="Type your message...">
-                    <button class="btn btn-dark">
-                    </button>
+                <div class="mt-3">
+                    <div class="input-group">
+                        <input type="text" id="messageInput" class="form-control" placeholder="Type a message...">
+                        <button class="btn" id="sendMessage">Send</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-1"></div>
-    
+
             <!-- Pinned Messages Section -->
             <div class="col-12 col-md-4 p-2">
                 <h4 class="text-center">Pinned</h4>
-                <div class="p-3 mb-2 bg-light rounded text-muted">Pinned Message 1</div>
-                <div class="p-3 mb-2 bg-light rounded text-muted">Pinned Message 2</div>
+                <div id="pinnedBox" class="p-3 rounded">
+                    <!-- Pinned messages will be added here dynamically -->
+                </div>
             </div>
+  
         </div>
     </div>
 
+    
 
-    <div class="container my-4">
+    <div class="container-fluid my-4" style="padding-left: 5em; padding-right: 5em; padding-bottom: 3em; background-color: #F4F3F3;;">
         <!-- Lost and Found section -->
         <div class="row">
             <div class="col-12 p-3">
@@ -97,219 +87,63 @@
             </div>
         </div>
     
-        <!-- Lost Items Grid -->
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="lost-card">
-                    <h5>Martin N.</h5>
-                    <div class="item-lost rounded bg-secondary p-5">
-                        <img src="https://via.placeholder.com/50" alt="Item">
-                    </div>
-                    <div class="details-box">
-                        <strong>Item:</strong> Scarf <br>
-                        <strong>Lost on:</strong> Thursday 6th <br>
-                        <strong>Description:</strong> ...
-                    </div>
-                    <div class="respond-box d-flex">
-                        <input type="text" class="form-control" placeholder="Respond...">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="lost-card">
-                    <h5>Alana P.</h5>
-                    <div class="item-lost rounded bg-secondary p-5">
-                        <img src="https://via.placeholder.com/50" alt="Item">
-                    </div>
-                    <div class="details-box">
-                        <strong>Item:</strong> Scarf <br>
-                        <strong>Lost on:</strong> Thursday 6th <br>
-                        <strong>Description:</strong> ...
-                    </div>
-                    <div class="respond-box d-flex">
-                        <input type="text" class="form-control" placeholder="Respond...">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="lost-card">
-                    <h5>Mannat V.</h5>
-                    <div class="item-lost rounded bg-secondary p-5">
-                        <img src="https://via.placeholder.com/50" alt="Item">
-                    </div>
-                    <div class="details-box">
-                        <strong>Item:</strong> Scarf <br>
-                        <strong>Lost on:</strong> Thursday 6th <br>
-                        <strong>Description:</strong> ...
-                    </div>
-                    <div class="respond-box d-flex">
-                        <input type="text" class="form-control" placeholder="Respond...">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="lost-card">
-                    <h5>You</h5>
-                    <div class="delete-icon">
-                        <i class="fas fa-trash"></i>
-                    </div>
-                    <div class="item-lost rounded bg-secondary p-5">
-                        <img src="https://via.placeholder.com/50" alt="Item">
-                    </div>
-                    <div class="details-box">
-                        <strong>Item:</strong> Scarf <br>
-                        <strong>Lost on:</strong> Thursday 6th <br>
-                        <strong>Description:</strong> ...
-                    </div>
-                    <div class="respond-box d-flex">
-                        <input type="text" class="form-control" placeholder="Respond...">
-                    </div>
-                </div>
-            </div>
+        
+        <div id="lostFoundSection" class="mt-4">
+            <!-- New lost objects will be added here dynamically -->
         </div>
-
-        <!-- See More Button -->
-        <div class="text-center mt-4">
-            <button class="btn btn-outline-secondary">
-                <i class="fas fa-angle-down"></i> See more
-            </button>
-        </div>
+        
 
         <!-- Add an Object Button -->
         <div class="d-flex justify-content-start align-items-center mt-5">
-            <button class="add-object-btn">
-                <strong>Add an object</strong>
+            <button class="btn btn-secondary add-object-btn">Add an Object</button>
             </button>
         </div>
 
-
-        <div class="form-container mt-4 bg-light">
-            <h5 class="fw-bold">New object lost</h5>
-            <form>
-                <div class="mb-3">
-                    <label class="form-label">Item:</label>
-                    <input type="text" class="form-control">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Lost on:</label>
-                    <input type="text" class="form-control">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Description: <span class="text-muted">(optional)</span></label>
-                    <textarea class="form-control" rows="3"></textarea>
-                </div>
-
-                <div class="mb-3 add-picture">
-                    <i class="bi bi-plus"></i>
-                    <span>Add a picture</span>
-                </div>
-
-                <button type="submit" class="btn btn-post">Post</button>
-            </form>
+        <div id="addObjectSection" class="form-container mt-4 p-3 rounded shadow" style="display: none;">
+            <h4>Add a Lost Object</h4>
+            <div class="mb-3">
+                <label for="objectName" class="form-label">Object Name</label>
+                <input type="text" id="objectName" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="objectDescription" class="form-label">Description</label>
+                <textarea id="objectDescription" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="objectImage" class="form-label">Upload Image</label>
+                <input type="file" id="objectImage" class="form-control" accept="image/*">
+            </div>
+            <button class="btn btn-success" id="postObject">Post</button>
         </div>
-
+        
     </div>
 
-    <div class="container my-5">
+
+
+    <div class="container-fluid my-5" style="padding-left: 5em; padding-right: 5em;">
         <!-- Title section -->
         <div class="row">
             <div class="col-12 mb-4">
                 <h2>Reviews</h2>
             </div>
         </div>
-    
-        <div class="p-4 rounded">
-            <div class="review mb-4">
-                <p><strong>Mr X (student of MSc 2019), currently working at Microsoft (e.g.)</strong></p>
-                <div class="review-card">
-                    <p>*the review*</p>
-                </div>
+
+        <div class="container">
+            <div id="reviews-list" class="row">
+                <!-- Reviews will be displayed here dynamically -->
             </div>
         
-            <div class="review mb-4">
-                <p><strong>Blabla</strong></p>
-                <div class="review-card">
-                    <p>*the review*</p>
-                </div>
+            <!-- Navigation buttons -->
+            <div class="navigation-buttons">
+                <button id="prev" class="btn reviews-btn">Previous</button>
+                <button id="next" class="btn reviews-btn">Next</button>
             </div>
-        
-            <div class="review mb-4">
-                <p><strong>Blabla, previous/current student</strong></p>
-                <div class="review-card">
-                    <p>*the review*</p>
-                </div>
-            </div>
-        </div>        
+        </div>
+           
     </div>
 
-
-
-<!--
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12 mb-4">
-                <h2>New object lost</h2>
-            </div>
-        </div>
-
-        <div class="row m-3 bg-light">            
-            <div class="row p-3">
-                <div class="col-4">
-                    <h4>Item: </h4>
-                </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="...">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4 p-3">
-                    <h4>Lost on: </h4>
-                </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="...">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4 p-3">
-                    <h4>Description: </h4>
-                    <h4>(optional)</h4>
-                </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="...">
-                </div>
-            </div>
-
-        </div>
-        
-        <div class="row">
-            <div class="col-md-10"></div>
-            <div class="col-md-2">
-                <i>Add a picture...</i>
-
-            </div>
-            
-        </div>
-
-        <div class="row">
-            <div class="col-md-10"></div>
-            <div class="col-md-1 rounded text-center bg-secondary">
-                <strong>POST</strong>
-
-            </div>        </div>
-
-
-          
-    </div>
-    -->
-
-    
+   
+       
         <!-- Footer section -->
         <footer class="footer py-5 bg-light">
             <div class="container">
@@ -354,6 +188,16 @@
                 </div>
             </div>
         </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/chatbox.js"></script>
+    <script src="../assets/js/lostAndFound.js"></script>
+    <script src="../assets/js/reviews.js"></script>
+
+
+</body>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>

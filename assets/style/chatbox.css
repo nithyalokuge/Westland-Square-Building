@@ -1,0 +1,51 @@
+/* Chat Container */
+#chatBox {
+    height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.textMessage {
+    background-color: lightgrey;
+    max-width: 70%;
+    margin-left: auto;
+
+}
+
+/* Input Section */
+.input-group {
+    margin-top: 10px;
+}
+
+#messageInput {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Send message button */
+#sendMessage {
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 5px;
+    background-color: #F4F3F3;
+}
+
+/* Pinned messages section */
+#pinnedBox {
+    min-height: 60vh;
+    overflow-y: auto;
+    background-color: #F4F3F3;
+}
+
+.pinned-message {
+    background-color: lightblue; 
+    color: black;
+
+}
+
+
+
+
