@@ -1,0 +1,37 @@
+/* Form to add a lost object */
+.form-container {
+    background-color: lightblue;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#lostFoundSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns on large screens */
+    gap: 1rem; 
+}
+
+.object-card {
+    width: 100%; /* Ensure cards take full available width in grid columns */
+    word-break: break-word; /* Break long words onto the next line */
+}
+
+
+@media (max-width: 768px) {
+    #lostFoundSection {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+}
+
+
+
+/* REVIEWS SECTION */
+
+
+.review-card {
+    background-color: gray;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
