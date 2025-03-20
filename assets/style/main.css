@@ -9,24 +9,9 @@
 /* ========================= */
 body {
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     color: black;
-}
-
-h2 {
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
-h3 {
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-section {
-    padding: 60px 20px;
 }
 
 h2 {
@@ -82,187 +67,6 @@ footer {
     transition: color 0.3s ease-in-out;
 }
 
-.footer-link:hover {
-    color: #0569b9;
-}
-
-.social-media a i {
-    color: #0569b9;
-    font-size: 1.2rem;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-media a:hover i {
-    color: #034e87 !important;
-}
-
-/* ========================= */
-/* Homepage Styling */
-/* ========================= */
-.about, .explore {
-    background-color: #F4F3F3;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
-}
-
-.bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2;
-}
-
-.text h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.text p {
-    font-size: 1.5rem;
-}
-
-.who .people img {
-    width: 150px; 
-    height: 150px;
-    border-radius: 100px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.who .people img:hover {
-    transform: scale(1.1); 
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
-}
-
-.explore .card-link {
-    text-decoration: none; 
-}
-
-.explore .card {
-    cursor: pointer; 
-}
-
-/* ========================= */
-/* Card Design */
-/* ========================= */
-.card {
-    height: 100%;
-    background: #0569b9;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-/* ========================= */
-/* Facilities Page Styling */
-/* ========================= */
-#floor-plans, #idm-classroom, #other-rooms, #kitchen {
-    background-color: #F4F3F3;
-}
-
-#floor-plans ul li i, #idm-classroom ul li i, #labs-and-tech ul li i, #restrooms ul li i, #kitchen ul li i {
-    margin-right: 10px;  
-    font-size: 1.2rem;    
-    color: white;       
-}
-
-#floor-plans ul.list-unstyled li {
-    border-bottom: 1px solid #ccc; 
-    padding-bottom: 5px; 
-}
-
-.third-floor-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px; 
-    justify-content: center;
-    align-items: center; 
-}
-
-.img-fluid {
-    max-width: 500px; 
-    height: auto; 
-}
-
-.floor-text {
-    font-size: 1.2rem; 
-}
-
-.idm-classroom-container, .kitchen-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-    gap: 60px; 
-}
-
-#labs-and-tech .carousel-item img {
-    max-width: 500px;
-    height: auto;
-
-/* ========================= */
-/* Footer */
-/* ========================= */
-footer {
-    font-size: 1rem;
-}
-
-.carousel {
-    border: none !important;
-}
-
-.classroom-image, .kitchen-image {
-    max-width: 400px;
-    height: auto; 
-}
-
-.tech-item img {
-    width: 50px;
-    border-radius: 50%;
-}
-
-#idm-classroom ul li i, #labs-and-tech ul li i, #kitchen ul li i {  
-    font-size: 10px;
-    color: black;       
-}
-
-#restrooms ul li i {  
-    font-size: 10px;     
 .footer-link:hover {
     color: #0569b9;
 }
@@ -516,15 +320,12 @@ footer {
 
 /* ========================= */
 /* What's around Page Styling */
-/* What's around Page Styling */
 /* ========================= */
 #food-places {
     background-color: #F4F3F3;
 }
 
 #food-places .btn {
-    background-color: #3266ad;
-    color: white
     background-color: #3266ad;
     color: white
 }
@@ -539,61 +340,6 @@ footer {
 .filter-btn:disabled {
     background-color: #9fbab5;
     cursor: not-allowed; 
-    cursor: not-allowed; 
-}
-
-.whatsAround .card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.whatsAround .card-body {
-    text-align: center;
-    padding: 15px;
-}
-
-.whatsAround .card-body h5 {
-    font-size: 1.2rem ;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ccc; 
-    padding-bottom: 5px; 
-}
-
-.whatsAround .card-body p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ccc; 
-    padding-bottom: 5px; 
-}
-
-.whatsAround .card-body .place-descr {
-    font-style: italic;
-}
-
-.whatsAround .card-body a {
-    font-size: 0.9rem;
-    color: white;
-}
-
-.whatsAround i {
-    margin-right: 10px;       
-}
-
-.whatsAround .card-body a:hover {
-    text-decoration: underline;
-}
-
-.map-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 20px;
-}
-
-.map-container iframe {
-    max-width: 900; 
-    height: 480;
 }
 
 .whatsAround .card-img-top {
@@ -697,12 +443,7 @@ footer {
 }
 
 .carousel-control-prev, .carousel-control-next {
-    filter: invert(100%); 
-}
-
-.carousel-control-prev, .carousel-control-next {
     color: black;
-    width: 2%;
     width: 2%;
 }
 
@@ -711,56 +452,12 @@ footer {
 }
 
 .pdf embed {
-.pdf embed {
     width: 80%;
-    max-width: 100%; 
-    height: 500px; 
     max-width: 100%; 
     height: 500px; 
     border: none;
 }
 
-/* ========================= */
-/* Contact Page Styling */
-/* ========================= */
-#open-hour, #course-director, .list-group li {
-    background-color: #F4F3F3;
-}
-
-.calendar-frame iframe {
-    width: 100%;
-    height: 300px;
-}
-
-#find-us-here h2 {
-    margin-bottom: 40px;
-}
-
-.map iframe {
-    width: 100%;
-}
-
-.person {
-    background: #0569b9;
-    padding: 20px;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.person:hover {
-    transform: scale(1.1); 
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
-}
-
-.person img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
 /* ========================= */
 /* Contact Page Styling */
 /* ========================= */
@@ -811,9 +508,6 @@ footer {
     .footer-logo {
         height: 50px;
         margin-bottom: 50px;
-    .footer-logo {
-        height: 50px;
-        margin-bottom: 50px;
     }
 }
 
@@ -837,22 +531,8 @@ footer {
     .classroom-image, .kitchen-image, #labs-and-tech .carousel-inner {
         margin-top: 20px;
     }
-    .idm-classroom-container, .kitchen-container {
-        gap: 20px; 
-        display: block;
-    }
-    .img-fluid {
-        width: 90%;
-    }
-    .classroom-image, .kitchen-image, #labs-and-tech .carousel-inner {
-        margin-top: 20px;
-    }
 }
 
-@media (width: 768px) {
-    .footer-logo {
-        height: 40px;
-        margin-right: 50px;
 @media (width: 768px) {
     .footer-logo {
         height: 40px;
@@ -866,19 +546,6 @@ footer {
 @media (max-width: 760px) {
     .footer .social-media {
         margin-top: 20px;
-        text-align: left;
-    }
-}
-
-@media (max-width: 760px) {
-    .footer .social-media {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 520px) {
-    .filter-btn {
-        margin: 5px 0; 
     }
 }
 
