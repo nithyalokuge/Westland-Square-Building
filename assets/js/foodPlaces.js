@@ -15,7 +15,7 @@ fetch('../assets/js/foodPlaces.json')
                 const foodPlaceDiv = document.createElement('div');
                 foodPlaceDiv.classList.add('col');
                 foodPlaceDiv.innerHTML = `
-                    <div class="card whatsAround">
+                    <div class="card-fac whatsAround">
                         <img src="${place.image}" class="card-img-top" alt="${place.name} +'s + picture">
                         <div class="card-body">
                             <h5 class="fw-bold">${place.name}</h5>
