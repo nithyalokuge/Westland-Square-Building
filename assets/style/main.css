@@ -78,7 +78,7 @@ footer {
 /* ========================= */
 /* Homepage Styling */
 /* ========================= */
-.about, .explore {
+.about {
     background-color: #F4F3F3;
 }
 
@@ -86,7 +86,36 @@ footer {
     position: relative;
     width: 100%;
     height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     overflow: hidden;
+    padding: 20px; /* Prevent elements from touching edges */
+}
+
+.text {
+    z-index: 2;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#explore-container {
+    z-index: 2;
+    width: 100%;
+    max-width: 900px; /* Limits width on large screens */
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 .bg-video {
@@ -97,30 +126,40 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+    z-index: -1;
 }
 
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2;
+#homepage-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: rgba(5, 105, 185, 0.8);
+    padding: 10px 20px;
+    margin-top: -10rem; 
 }
 
-.text h1 {
-    font-size: 3rem;
+#homepage-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
     font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(5, 105, 185, 0.8); 
+    margin: 5px 0 0;
+    padding: 8px 10px;
 }
 
-.text p {
-    font-size: 1.5rem;
+#explore-container {
+    margin-top: 22rem;
+    position: relative;
 }
 
 .who .people img {
     width: 150px; 
     height: 150px;
-    border-radius: 100px;
+    border-radius: 50%;     
+    object-fit: cover;      
+    object-position: center; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -129,12 +168,44 @@ footer {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
 }
 
-.explore .card-link {
-    text-decoration: none; 
+.people img.adjust-center {
+    max-width: 150px;
+    height: 100%;
+    max-height: 150px;
+    border-radius: 50%;
+    object-fit: fill;
+    object-position: 50% 70%; 
 }
 
-.explore .card {
+.explore .card-link {
+    text-decoration: none !important; 
+}
+
+#explore-container .card {
     cursor: pointer; 
+    display: flex;
+    text-decoration: none;
+    height: auto;      
+    width: 100%;        
+    max-width: 300px;  
+    background-color: #0569b9;  
+    color: #ffffff;             
+    border: 2px solid #0569b9;  
+    padding: 30px;     
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#explore-container .card:hover {
+    transform: scale(1.05);     
+    background-color: #ffffff;  
+    color: #0569b9;             
+    border: 2px solid #0569b9;
 }
 
 /* ========================= */
@@ -379,6 +450,111 @@ footer {
 }
 
 /* ========================= */
+/* Student board Page Styling */
+/* ========================= */
+.board {
+    padding-left: 5em; 
+    padding-right: 5em; 
+    padding-bottom: 3em;
+}
+
+.chat {
+    min-height: 80vh;
+}
+
+#chatBox {
+    height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.textMessage {
+    background-color: lightgrey;
+    max-width: 70%;
+    margin-left: auto;
+
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+#messageInput {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#sendMessage {
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 5px;
+    background-color: #F4F3F3;
+}
+
+#pinnedBox {
+    min-height: 60vh;
+    overflow-y: auto;
+    background-color: #F4F3F3;
+}
+
+.pinned-message {
+    background-color: lightblue; 
+    color: black;
+
+}
+
+.form-container {
+    background-color: lightblue;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lostAndFound {
+    padding-left: 5em; 
+    padding-right: 5em; 
+    padding-bottom: 3em; 
+    background-color: #F4F3F3;
+}
+
+#lostFoundSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+}
+
+#addObjectSection {
+    display: none;
+}
+
+.object-card {
+    width: 100%; 
+    word-break: break-word; /* Break long words onto the next line */
+}
+
+.reviews {
+    padding-left: 5em; 
+    padding-right: 5em;
+}
+
+.review-card {
+    background-color: gray;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#prev, #next{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: #F4F3F3;
+}
+
+/* ========================= */
 /* Contact Page Styling */
 /* ========================= */
 #open-hour, #course-director, .list-group li {
@@ -424,6 +600,153 @@ footer {
 /* ========================= */
 /* Responsive Adjustments */
 /* ========================= */
+@media (max-width: 991px) {
+    #homepage-hero {
+        height: 140vh;  
+        min-height: 700px;
+    }
+
+    .bg-video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .text {
+        top: 30%; 
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    #homepage-title {
+        width: 90%;  
+        max-width: 300px;
+        font-size: 2rem;
+        margin: 1rem auto 2rem;
+    }
+
+    #homepage-description {
+        width: 90%;  
+        max-width: 300px;
+        font-size: 1rem;  
+        margin: 0 auto 3rem;  
+    }
+
+    #explore-container {
+        margin-top: 5rem; 
+    }
+
+    .row {
+        gap: 1.5rem; 
+    }
+
+    #explore-container .col-md-3 {
+        width: 100%;  
+        max-width: 160px;  
+        aspect-ratio: 1/1;  
+        margin: 5px auto;  
+    }
+
+    #explore-container .card {
+        width: 100%;  
+        height: 100%;  
+        padding: 15px;  
+        border-radius: 12px;  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #explore-container .card a {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 991px) {
+    .text {
+        top: 15%;
+    }
+
+    #explore-container {
+        margin-top: 7rem;
+    }
+
+    .row {
+        gap: 1rem;
+    }
+
+    #explore-container .col-md-3 {
+        width: 100%;  
+        max-width: 200px;  
+        margin: 5px auto;
+    }
+
+    #explore-container .card {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-video {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .text {
+        top: 20%; 
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    #homepage-title {
+        width: 90%;  
+        max-width: 300px;
+        font-size: 2rem; 
+        margin: 1rem auto 2rem;  
+    }
+
+    #homepage-description {
+        width: 90%;  
+        max-width: 300px;
+        font-size: 1rem;  
+        margin: 0 auto 3rem;  
+    }
+
+    #explore-container {
+        margin-top: 8rem;  
+    }
+
+    #explore-container .col-md-3 {
+        width: 100%;  
+        max-width: 140px;  
+        aspect-ratio: 1/1;  
+        margin: 5px auto;  
+    }
+}
+
+@media (max-width: 520px) {
+    #homepage-title {
+        font-size: 1.8rem; 
+    }
+
+    #homepage-description {
+        font-size: 1rem;
+    }
+
+    #explore-container .col-md-3 {
+        width: 100%;
+        max-width: 140px;  
+        margin: 5px auto;
+    }
+
+    #explore-container .card {
+        padding: 3px;
+    }
+}
+
 @media (max-width: 1024px) {
     .footer-logo {
         height: 50px;
@@ -450,6 +773,9 @@ footer {
     }
     .classroom-image, .kitchen-image, #labs-and-tech .carousel-inner {
         margin-top: 20px;
+    }
+    #lostFoundSection {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
     }
 }
 
