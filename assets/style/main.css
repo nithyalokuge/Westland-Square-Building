@@ -241,7 +241,7 @@ footer {
 /* ========================= */
 /* Facilities Page Styling */
 /* ========================= */
-#floor-plans, #idm-classroom, #other-rooms, #kitchen {
+#floor-plans, #idm-classroom, #tech-provided, #restrooms {
     background-color: #F4F3F3;
 }
 
@@ -282,12 +282,18 @@ footer {
 }
 
 #labs-and-tech .carousel-item img {
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
 }
 
 .carousel {
     border: none !important;
+}
+
+#labSlideshow,
+#labSlideshow .carousel-inner,
+#labSlideshow .carousel-item {
+    background: transparent !important;
 }
 
 .classroom-image, .kitchen-image {
