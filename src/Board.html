@@ -36,12 +36,9 @@
             </nav>    
         </header>
 
+        <!-- Board section -->
         <div class="container-fluid board py-5">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Board</h2>
-                </div>
-            </div>
+            <h2>Board</h2>
             <!-- Chat and pinned messages -->
             <div class="row bg-white p-3 rounded shadow chat">
                 <!-- Chat section -->
@@ -68,11 +65,13 @@
             </div>
         </div>
 
+        <!-- Lost and Found section -->
         <div class="container-fluid py-5 lostAndFound">
             <!-- Lost and Found section -->
             <div class="row">
                 <div class="col-12 p-3">
                     <h2>Lost and Found</h2>
+                    <p>Have you lost anything in the building? Click the button below and let everyone know!</p>
                 </div>
             </div>
             <div id="lostFoundSection" class="mt-4">
@@ -84,23 +83,24 @@
                 </button>
             </div>
             <div id="addObjectSection" class="form-container mt-4 p-3 rounded shadow">
-                <h4>Add a Lost Object</h4>
+                <h4 class="fw-bold">Add a Lost Object</h4>
                 <div class="mb-3">
-                    <label for="objectName" class="form-label">Object name</label>
+                    <label for="objectName" class="form-label fw-bold">Object name</label>
                     <input type="text" id="objectName" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="objectDescription" class="form-label">Description</label>
+                    <label for="objectDescription" class="form-label fw-bold">Description</label>
                     <textarea id="objectDescription" class="form-control" rows="3"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="objectImage" class="form-label">Upload image</label>
+                    <label for="objectImage" class="form-label fw-bold">Upload image</label>
                     <input type="file" id="objectImage" class="form-control" accept="image/*">
                 </div>
-                <button class="btn btn-success" id="postObject">Post</button>
+                <button class="btn" id="postObject">Post</button>
             </div>
         </div>
 
+        <!-- Reviews section -->
         <div class="container-fluid py-5 reviews">
             <div class="row">
                 <div class="col-12 mb-4">

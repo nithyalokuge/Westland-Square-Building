@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadMessages() {
         let messages = JSON.parse(localStorage.getItem("chatMessages")) || [];
         messages.forEach(({ text, pinned }) => {
-            let messageDiv = createMessageElement(text, pinned);
+            let messageDiv = createMessageElement(text, "You", pinned); 
             chatBox.appendChild(messageDiv);
             if (pinned) pinMessage(text);
         });
     }
-
+    
     // Save messages to localStorage
     function saveMessages() {
         let messages = Array.from(chatBox.children).map(div => {
@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
         pinButton.addEventListener("click", function () {
             if (!pinButton.classList.contains("pinned")) {
                 pinButton.classList.add("pinned");
-                pinButton.innerHTML = '<i class="fas fa-thumbtack"></i>'; 
+                pinButton.innerHTML = '<i class="fas fa-thumbtack text-white"></i>'; 
                 pinMessage(text);
             } else {
                 pinButton.classList.remove("pinned");
-                pinButton.innerHTML = '<i class="far fa-thumbtack"></i>'; 
+                pinButton.innerHTML = '<i class="far fa-thumbtack text-white"></i>'; 
                 unpinMessage(text);
             }
             saveMessages();
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Delete button
         let deleteButton = document.createElement("button");
         deleteButton.innerHTML = `<i class="fas fa-trash"></i>`;
-        deleteButton.classList.add("btn", "btn-sm", "btn-danger", "ms-2");
+        deleteButton.classList.add("btn", "btn-sm", "btn-bin", "ms-2");
         deleteButton.addEventListener("click", function () {
             deleteMessage(text, messageDiv);
         });
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         textDiv.innerHTML = `<p class="mb-0">${text}</p>`;
 
         let unpinBtn = document.createElement("button");
-        unpinBtn.classList.add("btn", "unpinBtn", "btn-sm", "btn-light");
+        unpinBtn.classList.add("btn", "unpinBtn", "btn-sm");
         unpinBtn.textContent = "Unpin";
         unpinBtn.addEventListener("click", function () {
             unpinMessage(text);

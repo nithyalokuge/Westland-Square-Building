@@ -455,7 +455,7 @@ footer {
 .board {
     padding-left: 5em; 
     padding-right: 5em; 
-    padding-bottom: 3em;
+    background-color: #F4F3F3;
 }
 
 .chat {
@@ -491,13 +491,19 @@ footer {
     border-radius: 20px;
     padding: 10px 20px;
     margin-left: 5px;
-    background-color: #F4F3F3;
+    color: white;
+    background-color: #3266ad;
 }
 
 #pinnedBox {
     min-height: 60vh;
     overflow-y: auto;
     background-color: #F4F3F3;
+}
+
+.btn-bin, .unpinBtn, .pin-button, .remove-object, .add-object-btn, #postObject {
+    color: white;
+    background-color: #3266ad;
 }
 
 .pinned-message {
@@ -516,8 +522,15 @@ footer {
 .lostAndFound {
     padding-left: 5em; 
     padding-right: 5em; 
-    padding-bottom: 3em; 
-    background-color: #F4F3F3;
+}
+
+.lostAndFound h5 {
+    font-weight: bold;
+    color: black;
+}
+
+.lostAndFound p {
+    font-size: 1.2rem;
 }
 
 #lostFoundSection {
@@ -527,31 +540,34 @@ footer {
 }
 
 #addObjectSection {
+    color: black;
+    background-color: #F4F3F3;
     display: none;
 }
 
 .object-card {
     width: 100%; 
+    background-color: #F4F3F3;
     word-break: break-word; /* Break long words onto the next line */
 }
 
 .reviews {
     padding-left: 5em; 
     padding-right: 5em;
+    background-color: #F4F3F3;
 }
 
-.review-card {
-    background-color: gray;
-    border-radius: 8px;
-    padding: 20px;
+.reviews .card-title {
     margin-bottom: 20px;
+    border-bottom: 1px solid;
 }
 
 #prev, #next{
     margin-top: 20px;
     text-align: center;
     align-items: center;
-    background-color: #F4F3F3;
+    color: white;
+    background-color: #3266ad;
 }
 
 /* ========================= */
@@ -773,6 +789,10 @@ footer {
     }
     .classroom-image, .kitchen-image, #labs-and-tech .carousel-inner {
         margin-top: 20px;
+    }
+    .board, .reviews, .lostAndFound {
+        padding-left: 2em; 
+        padding-right: 2em; 
     }
     #lostFoundSection {
         grid-template-columns: 1fr; /* 1 card per row on small screens */

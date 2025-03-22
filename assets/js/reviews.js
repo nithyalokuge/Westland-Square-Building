@@ -18,7 +18,7 @@ fetch('../assets/js/reviews.json')
                 reviewDiv.innerHTML = `
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">${review.name} (${review.year})</h5>
+                            <h5 class="card-title fw-bold">${review.name} (${review.year})</h5>
                             <p class="card-text">${review.comment}</p>
                         </div>
                     </div>
