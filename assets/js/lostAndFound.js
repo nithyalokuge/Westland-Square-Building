@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to create a new lost object card
     function addLostObjectToSection(lostObject) {
         const objectCard = document.createElement("div");
-        objectCard.classList.add("object-card", "p-3", "mb-3", "bg-white", "rounded", "shadow-sm");
+        objectCard.classList.add("object-card", "p-3", "mb-3", "rounded", "shadow-sm");
 
         // Create object card content (including image if provided)
         let objectCardContent = `
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         objectCard.innerHTML = objectCardContent;
-        objectCard.innerHTML += '<p><button class="btn btn-sm btn-danger remove-object">Remove</button></p>';
+        objectCard.innerHTML += '<p><button class="btn btn-sm remove-object mt-3">Remove</button></p>';
 
         // Append to the Lost & Found section
         lostFoundSection.appendChild(objectCard);
