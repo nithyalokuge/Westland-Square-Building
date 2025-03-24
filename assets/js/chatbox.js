@@ -44,18 +44,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Pin button
         let pinButton = document.createElement("button");
-        pinButton.innerHTML = `<i class="${isPinned ? 'fas' : 'far'} fa-thumbtack"></i>`;
+        pinButton.innerHTML = `<i class="${isPinned ? 'fas' : 'fa-solid'} fa-thumbtack"></i>`;
         pinButton.classList.add("btn", "btn-sm", "text-white", "pin-button");
         if (isPinned) pinButton.classList.add("pinned");
 
         pinButton.addEventListener("click", function () {
             if (!pinButton.classList.contains("pinned")) {
                 pinButton.classList.add("pinned");
-                pinButton.innerHTML = '<i class="fas fa-thumbtack text-white"></i>'; 
+                pinButton.innerHTML = '<i class="fa-solid fa-thumbtack-slash text-white"></i>';
                 pinMessage(text);
             } else {
                 pinButton.classList.remove("pinned");
-                pinButton.innerHTML = '<i class="far fa-thumbtack text-white"></i>'; 
+                pinButton.innerHTML = '<i class="fa-solid fa-thumbtack text-white"></i>';
                 unpinMessage(text);
             }
             saveMessages();
