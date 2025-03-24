@@ -18,7 +18,7 @@ fetch('../assets/js/reviews.json')
                 reviewDiv.innerHTML = `
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">${review.name} (${review.year})</h5>
+                            <h5 class="card-title fw-bold">${review.name}</h5>
                             <p class="card-text">${review.comment}</p>
                         </div>
                     </div>
@@ -34,17 +34,6 @@ fetch('../assets/js/reviews.json')
             const end = start + reviewsPerPage;
             const pageReviews = filteredReviews.slice(start, end);
             displayReviews(pageReviews);
-        }
-
-        // Function to filter reviews based on category
-        function filterReviews(category) {
-            if (category === 'all') {
-                filteredReviews = reviews;
-            } else {
-                filteredReviews = reviews.filter(review => review.category === category);
-            }
-            currentPage = 0; 
-            showPage(currentPage);
         }
 
         // Event listener for filter buttons

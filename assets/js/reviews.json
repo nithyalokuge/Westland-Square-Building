@@ -1,33 +1,23 @@
 [
     {
-      "name": "Mr X",
-      "year": "MSc 2019",
-      "comment": "This was an excellent experience. Highly recommend!",
-      "category": "all"
+      "name": "Emilio P.",
+      "comment": "This was an excellent experience. Highly recommend!"
     },
     {
       "name": "Alana P.",
-      "year": "MSc 2020",
-      "comment": "Very informative and useful course.",
-      "category": "all"
+      "comment": "Very informative and useful course."
     },
     {
-      "name": "John Doe",
-      "year": "MSc 2021",
-      "comment": "Great professor and content.",
-      "category": "all"
+      "name": "Damian N.",
+      "comment": "Great professor and content."
     },
     {
-      "name": "HELLO",
-      "year": "MSc 2021",
-      "comment": "Great professor and content.",
-      "category": "all"
+      "name": "Aybuke C.",
+      "comment": "Great professor and content."
     },
     {
-      "name": "John Doe",
-      "year": "MSc 2021",
-      "comment": "Great professor and content.",
-      "category": "all"
+      "name": "Finn H.",
+      "comment": "Great professor and content."
     }
   ]
   
