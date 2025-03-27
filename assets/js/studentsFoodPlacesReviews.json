@@ -8,30 +8,30 @@
     },
     {
         "place": "Subway",
-        "rating": "★★★☆☆",
-        "review": "The prices have definitely gone up lately, but I still go to Subway twice a month just for their subs. The one with chicken, American cheese, salad, and salsa is absolutely fantastic.",
-        "student": "Giselle Cruz Martínez",
+        "rating": "★★★★☆",
+        "review": "Great and tasty food! Cheaper option compared to other places around like Zombrero. Avoid around 1 though, it's VERY busy.",
+        "student": "Eve Brady",
         "studentStatus": "current IDM student"
     },
     {
         "place": "Honey Truffle",
         "rating": "★★★★☆",
-        "review": "This is the place I go every day for my breakfast. The coffee is always perfect, and the croissant? Absolutely to die for! I honestly can't imagine starting my day without it. Coffee and croissant for life, I guess. I don’t know how I’d survive without this spot in my routine. Highly recommend!",
-        "student": "Eve Brady",
+        "review": "The coffee is really strong but tasty and the breakfast menu is pretty good. I would recommend using your TCard to get a discount. Plus, the seating area is a great place to study and the staff there is really nice!",
+        "student": "Robyn Quigley",
         "studentStatus": "current IDM student"
     },
     {
         "place": "Bitebox",
         "rating": "★★★★★",
-        "review": "The burgers they make here are top-tier! Juicy, flavourful, and cooked just right. Every bite is a taste of perfection.",
-        "student": "Giselle Cruz Martínez",
+        "review": "Their burger made me feel alive.",
+        "student": "Martin Nangole",
         "studentStatus": "current IDM student"
     },
     {
         "place": "The Pig and Heifer",
         "rating": "★★★★☆",
         "review": "Yummy sandwiches with a huge selection of fillings. The ques can be quite long at lunch time, but they move quickly.",
-        "student": "Martin Nangole",
+        "student": "",
         "studentStatus": "current IDM student"
     }
 ]
