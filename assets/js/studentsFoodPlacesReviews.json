@@ -31,7 +31,11 @@
         "place": "The Pig and Heifer",
         "rating": "★★★★☆",
         "review": "Yummy sandwiches with a huge selection of fillings. The ques can be quite long at lunch time, but they move quickly.",
+<<<<<<< HEAD
         "student": "",
+=======
+        "student": "Nithya Lokuge",
+>>>>>>> whatsAround_Nithya
         "studentStatus": "current IDM student"
     }
 ]
