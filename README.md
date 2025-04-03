@@ -16,7 +16,33 @@ This group project is part of the **"Authoring for Digital Media" module (CS7026
 ---
 
 ## Features 
-(will be updated)
+### Homepage – General Overview  
+- Get a **brief description** of the Westland Square Building.  
+- See **who is inside** the building, including staff and students.  
+
+### Facilities Page – Inside the Building  
+- Explore **each floor** and what it offers.  
+- Learn about available **technology** and resources.  
+- Find details on **restrooms**: *Male, Female, Gender-Neutral*.  
+- See what the **kitchen** provides for students and staff.  
+- Get a visual insight into the **IDM classroom** setup.  
+
+### What’s Around – Nearby Places & Transportation  
+- Discover **food shops, grocery stores, and cafés** nearby.  
+- Read **student reviews** on local places.  
+- Find out **what transportation options** are closest to the building.  
+
+### Student Board – Community Interactions  
+- **Chat with other students** *(Currently local storage; future database integration)*.  
+- **Pin and delete your own messages** for better organisation.  
+- **Report lost items** to alert fellow students *(Currently local storage; future database integration)*.  
+- **Read student reviews** about the IDM course.  
+
+### Contact – Essential Information  
+- **General opening hours** of the building.  
+- Access the **TCD Academic Calendar** for term dates.  
+- **Building location** details.  
+- Contact **course directors**, including their **emails and websites**.  
 
 ---
 
