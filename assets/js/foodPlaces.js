@@ -16,7 +16,7 @@ fetch('../assets/js/foodPlaces.json')
                 foodPlaceDiv.classList.add('col');
                 foodPlaceDiv.innerHTML = `
                     <div class="card whatsAround">
-                        <img src="${place.image}" class="card-img-top" alt="${place.name} +'s + picture">
+                        <img src="${place.image}" class="card-img-top" alt="${place.name}'s picture">
                         <div class="card-body">
                             <h5 class="fw-bold">${place.name}</h5>
                             <p class="place-descr">${place.description}</p>
@@ -59,3 +59,4 @@ fetch('../assets/js/foodPlaces.json')
         displayFoodPlaces(filteredFoodPlaces);
     })
     .catch(error => console.error('Error fetching data: ', error));
+
