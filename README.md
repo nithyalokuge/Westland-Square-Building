@@ -13,6 +13,7 @@ This group project is part of the **"Authoring for Digital Media" module (CS7026
 - [Technologies](#technologies)
 - [Wireframes](#wireframes)
 - [Roles](#roles)
+- [Deployment](#deployment)
 ---
 
 ## Features 
@@ -73,4 +74,10 @@ Each team member initially built their respective page using **HTML, Bootstrap, 
 ### CSS Merging & Final adjustments  
 - Finn later merged everything into a single CSS file and made structural adjustments.  
 - After that, each team member individually applied necessary changes to all pages to align with the wireframes.  
+---
+
+## Deployment
+
+The site is currently available on this [website]([https://nithyalokuge.github.io/Westland-Square-Building/]). 
+
 ---
