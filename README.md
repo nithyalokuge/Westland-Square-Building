@@ -78,6 +78,7 @@ Each team member initially built their respective page using **HTML, Bootstrap, 
 
 ## Deployment
 
-The site is currently available on this [website]([https://nithyalokuge.github.io/Westland-Square-Building/]). 
+The site is currently available on this [website](https://nithyalokuge.github.io/Westland-Square-Building/). 
 
 ---
+
